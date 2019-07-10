@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo23} alt="logo" className="logo-header" />
+        <img src={logo23} alt="oxys interaction design" className="logo-header" />
       </header>
     </div>
   );
