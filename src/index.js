@@ -3,14 +3,16 @@ import ReactDOM from 'react-dom';
 import { Route, Link, BrowserRouter as Router } from 'react-router-dom'
 import './index.css';
 import App from './App';
-import formtests from './formtests';
+import formtestsOld from './formtestsOld';
+import formtestsNew from './formtestsNew';
 import * as serviceWorker from './serviceWorker';
 
 const routing = (
   <Router>
     <div>
       <Route exact path="/" component={App} />
-      <Route path="/formtests" component={formtests} />
+      <Route path="/formtests-old" component={formtestsOld} />
+      <Route path="/formtests-new" component={formtestsNew} />
     </div>
   </Router>
 )
