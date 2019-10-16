@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.scss';
 
-function formtestsNew() {
+function FormtestsNew() {
   return (
     <div className="formtestes">
       <h2>form bricks</h2>
@@ -14,4 +14,4 @@ function formtestsNew() {
   );
 }
 
-export default formtestsNew;
+export default FormtestsNew;
