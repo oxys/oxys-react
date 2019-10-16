@@ -11,6 +11,12 @@ import * as serviceWorker from './serviceWorker';
 const routing = (
   <Router>
     <div>
+      <Switch>
+        <Route exact path="/" component={App} />
+        <Route path="/formtests-old" component={FormtestsOld} />
+        <Route path="/formtests-new" component={FormtestsNew} />
+        <Route component={Notfound} />
+      </Switch>
       <ul>
         <li>
           <Link to="/">Home</Link>
@@ -22,12 +28,6 @@ const routing = (
           <Link to="/formtests-new">FormtestsNew</Link>
         </li>
       </ul>
-      <Switch>
-        <Route exact path="/" component={App} />
-        <Route path="/formtests-old" component={FormtestsOld} />
-        <Route path="/formtests-new" component={FormtestsNew} />
-        <Route component={Notfound} />
-      </Switch>
     </div>
   </Router>
 )
