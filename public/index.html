@@ -39,16 +39,23 @@
 
 
     <script type="text/javascript">
-      $("body").mouseleave(function() {
-        $('.bricks--component.bricks--component-popup').attr('style', 'box-shadow: none !important');
-        console.log("Hello world!dd");
-        $('.bricks--close--button.rdstation-popup-js-close-button').attr('style', 'display: none !important');
+      var i = 0;
+      $("html").mouseleave(function() {
+        if (i == 0) {
+          console.log(i);
 
-        $("#rd-image-k8hlvtt2").click(function(){
-          console.log("Hellotooggg");
-          $("#rd-section-k8hluh9z").slideToggle();
-        });
-        $('#rd-section-k8hluh9z').attr('style', 'display: none;');
+          $('.bricks--component.bricks--component-popup').attr('style', 'box-shadow: none !important');
+          $('.bricks--close--button.rdstation-popup-js-close-button').attr('style', 'display: none !important');
+
+          $("#rd-image-k8hlvtt2").click(function(){
+            console.log("Hellotooggg");
+            $("#rd-section-k8hluh9z").slideToggle();
+          });
+          $('#rd-section-k8hluh9z').attr('style', 'display: none;');
+
+          i++;
+          console.log(i);
+        }
       });
     </script>
     <style type="text/css" rel="stylesheet">
