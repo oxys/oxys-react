@@ -13,6 +13,8 @@ const routing = (
     <div>
       <Switch>
         <Route exact path="/" component={App} />
+        <Route path="/formtests-old" component={FormtestsOld} />
+        <Route path="/formtests-new" component={FormtestsNew} />
         <Route component={Notfound} />
       </Switch>
       <ul>
