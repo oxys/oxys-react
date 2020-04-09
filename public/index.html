@@ -20,6 +20,7 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" async src="https://d335luupugsy2.cloudfront.net/js/loader-scripts/d0f29735-9cdf-42ab-b9de-f220ac7202ac-loader.js" ></script>
     <title>React App</title>
   </head>
   <body>
@@ -35,6 +36,32 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-    <script type="text/javascript" async src="https://d335luupugsy2.cloudfront.net/js/loader-scripts/d0f29735-9cdf-42ab-b9de-f220ac7202ac-loader.js" ></script>
+
+
+    <script type="text/javascript">
+      $("body").mouseleave(function() {
+        $('.bricks--component.bricks--component-popup').attr('style', 'box-shadow: none !important');
+        console.log("Hello world!dd");
+        $('.bricks--close--button.rdstation-popup-js-close-button').attr('style', 'display: none !important');
+
+        $("#rd-image-k8hlvtt2").click(function(){
+          console.log("Hellotooggg");
+          $("#rd-section-k8hluh9z").slideToggle();
+        });
+        $('#rd-section-k8hluh9z').attr('style', 'display: none;');
+      });
+    </script>
+    <style type="text/css" rel="stylesheet">
+        .bricks--component.bricks--component-popup,
+        .rdstation-popup-position-bottom_right > div[id^="bricks-component-"] {
+            box-shadow: none !important;
+            margin-bottom: 0px !important;
+            margin-right: 10px !important;
+        }
+        #rd-image-k8hlvtt2 {
+            cursor: pointer !important;
+        }
+    </style>
+
   </body>
 </html>
